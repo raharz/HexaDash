@@ -1,14 +1,524 @@
+<!-- Generation 13 -->
+
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Meta Tags and Linked Files -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="copyright" content="company name" />
+    <meta name="language" content="ES" />
+    <meta name="url" content="http://www.websiteaddrress.com" />
+    <title>Products</title>
+    <link rel="stylesheet" href="Invoices.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Pictures/Main Content/icon.png"
+    />
   </head>
+  <!-- Body of the Website -->
   <body>
-    <!-- The Header of The Website -->
-    <header></header>
+    <!-- The Header -->
+    <header>
+      <!-- Left Side of The Header -->
+      <div id="navbar-left">
+        <div id="logo-area">
+          <a href="#">
+            <img
+              src="../../Pictures/Main Content/logo.png"
+              alt="logo-on-header"
+            />
+          </a>
+          <a href="#">
+            <img src="../../Pictures/Main Content/10036.svg" alt="toggle" />
+          </a>
+        </div>
+        <a href="#" id="customize">
+          <span class="uil uil-edit-alt"></span>
+          <span class="sidebar-text">Customize...</span>
+        </a>
+      </div>
+      <!-- Right Side of The Header -->
+      <div id="navbar-right">
+        <!-- Menu Section -->
+        <ul id="menu-area">
+          <!-- All Icons -->
+          <li id="Search-header">
+            <a href="#">
+              <span class="uil uil-search"></span>
+            </a>
+          </li>
+          <!-- Mail Icon -->
+          <li>
+            <div id="massege"></div>
+            <a href="#"
+              ><img src="../../Pictures/Main Content/Mail.svg" alt="Mail"
+            /></a>
+          </li>
+          <!-- Ring Icon -->
+          <li id="the bell">
+            <div id="ball2"></div>
+            <a href="#"
+              ><img src="../../Pictures/Main Content/Ring.svg" alt="Ring"
+            /></a>
+          </li>
+          <!-- Setting Icon -->
+          <li>
+            <a href="#"
+              ><img src="../../Pictures/Main Content/setting.png" alt="Setting"
+            /></a>
+          </li>
+          <!-- Flag Icon -->
+          <li id="flag">
+            <a href="#"
+              ><img src="../../Pictures/Main Content/flag.png" alt="Flag"
+            /></a>
+          </li>
+          <!-- User Icon -->
+          <li id="user-image">
+            <a href="#"
+              ><img src="../../Pictures/Main Content/Danial.jpg" alt="Danial" />
+            </a>
+          </li>
+          <li id="user-title" style="padding: 0%">
+            <a href="#"> <span>Danial</span></a>
+          </li>
+          <li id="user-toggle" style="padding: 0%">
+            <a href="#"> <span>⌵</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <!-- Sidebar on The Left Side -->
-    <section id="sidebar"></section>
+    <section id="sidebar">
+      <!-- Wrapper For The Sidebar -->
+      <div id="sidebar-collapse">
+        <!-- Dashboard Section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-create-dashboard sidebar-icon"></span>
+            <span class="sidebar-text">Dashboard</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Layout section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-window-section sidebar-icon"></span>
+            <span class="sidebar-text">Layouts</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Changelog section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-arrow-growth sidebar-icon"></span>
+            <span class="sidebar-text">Changelog</span>
+            <span class="badge version-badge">1.7.7</span>
+          </a>
+        </li>
+        <!-- Application Title on Sidebar -->
+        <li class="sidebar-title">
+          <span>APPLICATIONS</span>
+        </li>
+        <!-- Email section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-envelope sidebar-icon"></span>
+            <span class="sidebar-text">Email</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Chat section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-chat sidebar-icon"></span>
+            <span class="sidebar-text">Chat</span>
+            <span class="badge green-badge">3</span>
+          </a>
+        </li>
+        <!-- eCommerce section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-bag sidebar-icon"></span>
+            <span class="sidebar-text">eCommerce</span>
+            <span class="sidebar-toggle-icon">⌵</span>
+          </a>
+          <ul>
+            <!-- Products section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Products</span>
+              </a>
+            </li>
+            <!-- Product Details section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Product Details</span>
+              </a>
+            </li>
+            <!-- Product Add section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Product Add</span>
+              </a>
+            </li>
+            <!-- Cart section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Cart</span>
+              </a>
+            </li>
+            <!-- Orders section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Orders</span>
+              </a>
+            </li>
+            <!-- Sellers section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Sellers</span>
+              </a>
+            </li>
+            <!-- Invoices section on Sidebar -->
+            <li class="sidebar-menu">
+              <a href="#">
+                <span class="sidebar-text">Invoices</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- Project section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-folder sidebar-icon"></span>
+            <span class="sidebar-text">Project</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Calendar section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-calendar-alt sidebar-icon"></span>
+            <span class="sidebar-text">Calendar</span>
+          </a>
+        </li>
+        <!-- Users section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-users-alt sidebar-icon"></span>
+            <span class="sidebar-text">Users</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Contact section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-at sidebar-icon"></span>
+            <span class="sidebar-text">Contact</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Note section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-clipboard-notes sidebar-icon"></span>
+            <span class="sidebar-text">Note</span>
+          </a>
+        </li>
+        <!-- To-Do section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-check-square sidebar-icon"></span>
+            <span class="sidebar-text">To-Do</span>
+          </a>
+        </li>
+        <!-- Kanban Board section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-expand-arrows sidebar-icon"></span>
+            <span class="sidebar-text">Kanban Board</span>
+          </a>
+        </li>
+        <!-- Import & Export section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-exchange sidebar-icon"></span>
+            <span class="sidebar-text">Import & Export</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- File Manager section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-file sidebar-icon"></span>
+            <span class="sidebar-text">File Manager</span>
+          </a>
+        </li>
+        <!-- Task App section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-lightbulb-alt sidebar-icon"></span>
+            <span class="sidebar-text">Task App</span>
+          </a>
+        </li>
+        <!-- Bookmarks section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-bookmark sidebar-icon"></span>
+            <span class="sidebar-text">Bookmarks</span>
+          </a>
+        </li>
+        <!-- Social App section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-apps sidebar-icon"></span>
+            <span class="sidebar-text">Social App</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Learning App section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-books sidebar-icon"></span>
+            <span class="sidebar-text">Learning App</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Support section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-user sidebar-icon"></span>
+            <span class="sidebar-text">Support</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- JobSearch App section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-search sidebar-icon"></span>
+            <span class="sidebar-text">JobSearch</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Table App section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-table sidebar-icon"></span>
+            <span class="sidebar-text">Table</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Cruid Title on Sidebar -->
+        <li class="sidebar-title">
+          <span>CRUID</span>
+        </li>
+        <!-- Firestore Crud section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-database sidebar-icon"></span>
+            <span class="sidebar-text">Firestore Crud</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Features Title on Sidebar -->
+        <li class="sidebar-title">
+          <span>FEAUTURES</span>
+        </li>
+        <!-- UI Elements section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-layers sidebar-icon"></span>
+            <span class="sidebar-text">UI Elements</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Charts section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-chart sidebar-icon"></span>
+            <span class="sidebar-text">Charts</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Froms section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-keyhole-circle sidebar-icon"></span>
+            <span class="sidebar-text">Froms</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Widget section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-server sidebar-icon"></span>
+            <span class="sidebar-text">Widget</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Wizards section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-square sidebar-icon"></span>
+            <span class="sidebar-text">Wizards</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Icons section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-grid sidebar-icon"></span>
+            <span class="sidebar-text">Icons</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Editors section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-edit sidebar-icon"></span>
+            <span class="sidebar-text">Editors</span>
+          </a>
+        </li>
+        <!-- Maps section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-map sidebar-icon"></span>
+            <span class="sidebar-text">Maps</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Pages Title on Sidebar -->
+        <li class="sidebar-title">
+          <span>PAGES</span>
+        </li>
+        <!-- Gallery section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-images sidebar-icon"></span>
+            <span class="sidebar-text">Gallery</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Pricing section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-bill sidebar-icon"></span>
+            <span class="sidebar-text">Pricing</span>
+          </a>
+        </li>
+        <!-- Banners section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-thumbs-up sidebar-icon"></span>
+            <span class="sidebar-text">Baanners</span>
+          </a>
+        </li>
+        <!-- Testimonial section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-book-open sidebar-icon"></span>
+            <span class="sidebar-text">Testimonial</span>
+          </a>
+        </li>
+        <!-- FAQ's section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-question-circle sidebar-icon"></span>
+            <span class="sidebar-text">FAQ's</span>
+          </a>
+        </li>
+        <!-- Search Results section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span
+              class="nav-icon uil uil-credit-card-search sidebar-icon"
+            ></span>
+            <span class="sidebar-text">Search Results</span>
+          </a>
+        </li>
+        <!-- Blank Page section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-circle sidebar-icon"></span>
+            <span class="sidebar-text">Blank Page</span>
+          </a>
+        </li>
+        <!-- Knowledge Base section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-window sidebar-icon"></span>
+            <span class="sidebar-text">Knowledge Base</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Support Center section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-headphones sidebar-icon"></span>
+            <span class="sidebar-text">Support Center</span>
+          </a>
+        </li>
+        <!-- Blog section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-images sidebar-icon"></span>
+            <span class="sidebar-text">Blog</span>
+            <span class="sidebar-toggle-icon">›</span>
+          </a>
+        </li>
+        <!-- Terms & Conditions section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-question-circle sidebar-icon"></span>
+            <span class="sidebar-text">Terms & Conditons</span>
+          </a>
+        </li>
+        <!-- Maintenance section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-airplay sidebar-icon"></span>
+            <span class="sidebar-text">Maintenance</span>
+          </a>
+        </li>
+        <!-- 404 section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span
+              class="nav-icon uil uil-exclamation-triangle sidebar-icon"
+            ></span>
+            <span class="sidebar-text">404</span>
+          </a>
+        </li>
+        <!-- Coming Soon section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-sync sidebar-icon"></span>
+            <span class="sidebar-text">Coming Soon</span>
+          </a>
+        </li>
+        <!-- Log In section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-signin sidebar-icon"></span>
+            <span class="sidebar-text">Log In</span>
+          </a>
+        </li>
+        <!-- Sign Up section on Sidebar -->
+        <li class="sidebar-menu">
+          <a href="#">
+            <span class="nav-icon uil uil-sign-out-alt sidebar-icon"></span>
+            <span class="sidebar-text">Sign Up</span>
+          </a>
+        </li>
+      </div>
+    </section>
   </body>
 </html>

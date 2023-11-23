@@ -1,21 +1,384 @@
+/* Added Fonts */
+
+@font-face {
+  font-family: "Jost";
+  font-weight: 500;
+
+  src: url(https://fonts.gstatic.com/s/jost/v15/92zatBhPNqw73oTd4g.woff2)
+    format("woff2");
+}
+
 /* Default Setting */
+
+a,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  list-style: none;
+}
 
 body {
   margin: 0%;
   padding: 0%;
+  background-color: #f7f8fb;
 }
+
+/* Header Section */
 
 header {
   width: 100%;
   height: 72px;
-  background-color: white;
-  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  background-color: #fff;
   position: fixed;
+  display: flex;
+  z-index: 2000;
+  justify-content: space-between;
 }
 
+/* Left Side of Header */
+
+#navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Section */
+
+#logo-area {
+  height: 100%;
+  width: 100%;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#logo-area a:first-child {
+  display: inline-block;
+  margin-right: 52px;
+}
+
+#logo-area a:first-child img {
+  max-width: 160px;
+  min-width: 160px;
+}
+
+#logo-area a:nth-child(2) {
+  margin-right: 8px;
+  padding-top: 3px;
+  padding-right: 3px;
+  display: inline-block;
+}
+
+#logo-area a:nth-child(2) img {
+  width: 19px;
+}
+
+/* Customize Button in Logo Area */
+
+#customize {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  padding: 3px 16px;
+  background-color: #f4f5f7;
+  border-radius: 50rem;
+  margin-left: 22px;
+  justify-content: center;
+  text-align: center;
+}
+
+#customize span:first-child {
+  color: #404040;
+  font-size: calc(16.2px + 0.15vw);
+  margin-right: 8px;
+}
+
+/* Customize Hover Section */
+
+#customize:hover {
+  background-color: #f200ff17;
+  transition: all 0.3s ease;
+}
+
+#customize:hover span {
+  color: #8231d3;
+  transition: all 0.3s ease;
+}
+
+/* Right Side of The Header */
+
+#navbar-right {
+  display: flex;
+}
+
+/* Menu Section */
+
+#menu-area {
+  display: flex;
+  padding-right: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-area li {
+  padding: 6px 12.5px;
+  display: inline-block;
+}
+
+#menu-area li:nth-child(7) {
+  padding-right: 0px;
+}
+
+#Search-header {
+  font-size: 20px;
+}
+
+.uil.uil-search {
+  color: #747474;
+}
+
+/* Header Icons */
+
+#massege {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #01b81a;
+  top: 4px;
+  left: 16px;
+}
+
+#flag img {
+  width: 20px;
+  border-radius: 50%;
+}
+
+#user-image {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#user-image a {
+  display: inline-block;
+}
+
+#user-image img {
+  width: 32px;
+  transition: 0.3s;
+}
+
+#user-toggle span {
+  padding: 0%;
+  padding-left: 7px;
+  margin-bottom: 35px;
+  color: #747474;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+#user-title span {
+  padding: 0px;
+  font-weight: 100;
+  color: #404040;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Ring Animation */
+
+#ball2 {
+  position: relative;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fa8b0c;
+  top: 6px;
+  left: 11px;
+}
+
+/* Notification Icon */
+
+.badge {
+  border-radius: 60px;
+  font-size: 9px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+.version-badge {
+  background-color: rgba(0, 170, 255, 0.1);
+  color: #00aaff;
+  min-width: 20px;
+  height: 18px;
+  padding: 0px 8px;
+  margin-left: 60px;
+}
+
+.green-badge {
+  background-color: #06c21fcf;
+  color: #fff;
+  width: 19px;
+  height: 19px;
+  padding: 0px 0px;
+  margin-left: 120px;
+}
+
+/* Main Adjustment of The Sidebar */
+
 #sidebar {
-  height: 51.1vw;
+  z-index: 1999;
+  position: fixed;
+  width: auto;
+  overflow-y: auto;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -20px 2px 20px 0px black;
+}
+
+/* Hide scrollbar by default */
+#sidebar::-webkit-scrollbar {
+  width: 9px;
+  background-color: #fff;
+}
+
+/* Show scrollbar on hover */
+#sidebar:hover::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Handle */
+#sidebar::-webkit-scrollbar-thumb {
+  background-color: #c3c3c300;
+  border-radius: 12px;
+}
+
+#sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #cfcfcf;
+}
+
+/* Handle on hover */
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background-color: #9b9b9b;
+}
+
+/* Sidebar Wrapper */
+
+#sidebar-collapse {
+  padding-top: 87px;
   width: 280px;
-  background-color: white;
-  box-shadow: 1px 1px 1px rgb(0, 0, 0);
+  height: 100%;
+}
+
+/* Adjustment For The Sidebar Titles */
+
+.sidebar-title {
+  margin-top: 1.875rem;
+}
+
+.sidebar-title span {
+  display: block;
+  color: #747474;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+/* Clickable Area of The Sidebar Texts */
+
+.sidebar-menu a {
+  padding: 11.9px 20px;
+  text-align: center;
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  color: #404040;
+}
+
+/* After Moving Your Move Across The Texts The Color Will Change */
+
+.sidebar-menu a:hover span:not(.green-badge):not(.version-badge) {
+  color: #8231d3;
+  transition: color 0.3s ease;
+}
+
+/* Adjustments For Icons Next To Each Text */
+
+.sidebar-icon {
+  color: #a0a0a0;
+  display: inline-block;
+  margin-right: 20px;
+  width: 16px;
+  font-size: 18px;
+}
+
+/* The Sidebar Texts */
+
+.sidebar-text {
+  color: #404040;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3571428571;
+}
+
+/* The "Geater Than" Icon Next To Each Title */
+
+.sidebar-toggle-icon {
+  font-size: 17px;
+  font-weight: 300;
+  margin-left: auto;
+  color: #a0a0a0;
+  margin-left: auto;
+}
+
+/* Adjustment For The Seventh Section */
+
+.sidebar-menu:nth-child(7) > a > span {
+  color: #8231d3;
+}
+
+.sidebar-menu:nth-child(7) .sidebar-toggle-icon {
+  font-size: 14px;
+}
+
+/* These ULs Belong To eCommerce Seection */
+
+#sidebar ul {
+  margin: 0px;
+  padding: 0%;
+  padding: 1px 33px 10px 0;
+}
+
+.sidebar-menu > ul > li > a {
+  margin-left: 36px;
+}
+
+/* Removing The Color Made By eCommerce Adjustments */
+.sidebar-menu > ul > li > a > span {
+  color: #404040 !important;
+}
+
+.sidebar-menu:nth-child(7) ul li:first-child {
+  background-color: rgba(130, 49, 211, 0.1);
+  border-radius: 0 50px 50px 0;
+}
+
+.sidebar-menu:nth-child(7) ul li:first-child span {
+  color: #8231d3 !important;
 }
